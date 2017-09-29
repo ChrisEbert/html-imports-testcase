@@ -1,0 +1,33 @@
+<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/2.0.2/lib/polymer/polymer-element.html">
+<link rel="import" href="/src/subcomponent.html">
+
+<dom-module id="x-app">
+    <template>
+        <style>
+        
+        </style>
+        
+        foo
+        
+        <x-subcomponent></x-subcomponent>
+
+    </template>
+
+    <script>
+        class XApp extends Polymer.Element {
+
+            static get properties() {
+                return {
+                    prop: String
+                }
+            }
+        
+            static get is() {
+                return 'x-app'
+            }
+        }
+    
+        customElements.define(XApp.is, XApp);
+
+    </script>
+</dom-module>

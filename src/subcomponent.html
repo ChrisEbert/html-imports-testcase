@@ -1,0 +1,30 @@
+<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/2.0.2/lib/polymer/polymer-element.html">
+
+<dom-module id="x-subcomponent">
+    <template>
+        <style>
+        
+        </style>
+        
+        bar
+
+    </template>
+
+    <script>
+        class XSubcomponent extends Polymer.Element {
+
+            static get properties() {
+                return {
+                    prop: String
+                }
+            }
+        
+            static get is() {
+                return 'x-subcomponent'
+            }
+        }
+    
+        customElements.define(XSubcomponent.is, XSubcomponent);
+
+    </script>
+</dom-module>
